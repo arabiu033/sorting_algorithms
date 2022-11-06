@@ -11,7 +11,7 @@ void insertion_sort_list(listint_t **list)
 
 	current = *list;
 	next = current->next;
-	while(current && next)
+	while (current && next)
 	{
 		if (current->n > next->n)
 		{
@@ -29,6 +29,7 @@ void insertion_sort_list(listint_t **list)
 /**
  * look_back - check for sorts through reverse
  * @current: node to start from
+ * @list: the linked list
  * Return: nothing
  */
 void look_back(listint_t *current, listint_t **list)
@@ -46,6 +47,7 @@ void look_back(listint_t *current, listint_t **list)
 /**
  * switcher - switches node
  * @node: the node to switch
+ * @list: the linked list
  * Return: void - nothing
  */
 void switcher(listint_t *node, listint_t **list)
