@@ -15,9 +15,7 @@ void insertion_sort_list(listint_t **list)
 	{
 		if (current->n > next->n)
 		{
-			printf("insert \n");
-			switcher(next);
-			print_list(*list);
+			switcher(next, list);
 			look_back(next, list);
 			next = current->next;
 			continue;
@@ -38,11 +36,9 @@ void look_back(listint_t *current, listint_t **list)
 	listint_t *prev;
 
 	prev = current->prev;
-	while (current && prev && prev->prev->n > current->n)
+	while (current && prev && prev->n > current->n)
 	{
-		printf("look back\n");
-		switcher(current);
-		print_list(*list);
+		switcher(current, list);
 		prev = current->prev;
 	}
 }
@@ -52,7 +48,7 @@ void look_back(listint_t *current, listint_t **list)
  * @node: the node to switch
  * Return: void - nothing
  */
-void switcher(listint_t *node)
+void switcher(listint_t *node, listint_t **list)
 {
 	listint_t *A, *D, *B, *C;
 
@@ -72,4 +68,9 @@ void switcher(listint_t *node)
 	B->prev = C;
 	C->next = B;
 	C->prev = A;
+
+	if (!A)
+		*list = C;
+
+	print_list(*list);
 }
