@@ -32,9 +32,9 @@ int partition_array(int *array, int l, int h, size_t size)
 	pivot_index = h;
 	partition_high = h - 1;
 	partition_low = l;
-	signal = 1;
 	for (i = partition_low; i <= partition_high; i++)
 	{
+		signal = 1;
 		if (array[i] > pivot)
 		{
 			for (j = partition_high; j > i; j--)
@@ -46,7 +46,7 @@ int partition_array(int *array, int l, int h, size_t size)
 					array[j] = temp;
 					print_array(array, size);
 					signal = 0;
-					partition_high = j + 1;
+					partition_high = j - 1;
 					break;
 				}
 			}
