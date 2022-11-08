@@ -21,14 +21,14 @@ At the end of this project, I was able to achieve:
 
 | Filename |
 | ------ |
-| [0-O](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/0-O)|
-| [0-bubble_sort.c](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/0-bubble_sort.c)|
-| [1-O](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/1-O)|
-| [1-insertion_sort_list.c](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/1-insertion_sort_list.c)|
-| [2-O](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/2-O)|
-| [2-selection_sort.c](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/2-selection_sort.c)|
-| [3-O](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/3-O)|
-| [3-quick_sort.c](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1B-sorting_algorithms/3-quick_sort.c)|
+| [0-O](https://github.com/arabiu033/sorting_algorithms/blob/main/0-O)|
+| [0-bubble_sort.c](https://github.com/arabiu033/sorting_algorithms/blob/main/0-bubble_sort.c)|
+| [1-O](https://github.com/arabiu033/sorting_algorithms/blob/main/1-O)|
+| [1-insertion_sort_list.c](https://github.com/arabiu033/sorting_algorithms/blob/main/1-insertion_sort_list.c)|
+| [2-O](https://github.com/arabiu033/sorting_algorithms/blob/main/2-O)|
+| [2-selection_sort.c](https://github.com/arabiu033/sorting_algorithms/blob/main/2-selection_sort.c)|
+| [3-O](https://github.com/arabiu033/sorting_algorithms/blob/main/3-O)|
+| [3-quick_sort.c](https://github.com/arabiu033/sorting_algorithms/blob/main/3-quick_sort.c)|
 
 ## Additional info :construction:
 ### Resources
