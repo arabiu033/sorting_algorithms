@@ -12,6 +12,14 @@ void quick_sort(int *array, size_t size)
 	sort(array, 0, size - 1, size);
 }
 
+/**
+ * sort - recursive calls to each partition generated
+ * @array: working array
+ * @l: lowest index
+ * @h: highest index
+ * @size: array size
+ * Return: void - nothing
+ */
 void sort(int *array, int l, int h, size_t size)
 {
 	int partition;
@@ -24,6 +32,14 @@ void sort(int *array, int l, int h, size_t size)
 	}
 }
 
+/**
+ * partition_array - Return the index location of new partition
+ * @array: working array
+ * @l: lowest index
+ * @h: highest index
+ * @size: aray size
+ * Return: new partition location
+ */
 int partition_array(int *array, int l, int h, size_t size)
 {
 	int pivot, pivot_index, partition_high, partition_low, i, j, signal;
@@ -59,13 +75,21 @@ int partition_array(int *array, int l, int h, size_t size)
 		{
 			if (array[i] > pivot)
 				swap(array, i, pivot_index, size);
-			return i;
+			return (i);
 		}
 	}
 
 	return (-1);
 }
 
+/**
+ * swap - swaps two array index
+ * @array: the array to work on
+ * @i: first index
+ * @j: second index
+ * @size: array size
+ * Return: void - nothing
+ */
 void swap(int *array, int i, int j, size_t size)
 {
 	int temp;
