@@ -26,7 +26,7 @@ void sort(int *array, int l, int h, size_t size)
 
 int partition_array(int *array, int l, int h, size_t size)
 {
-	int pivot, pivot_index, partition_high, partition_low, temp, i, j, signal;
+	int pivot, pivot_index, partition_high, partition_low, i, j, signal;
 
 	pivot = array[h];
 	pivot_index = h;
@@ -41,10 +41,7 @@ int partition_array(int *array, int l, int h, size_t size)
 			{
 				if (array[j] < pivot)
 				{
-					temp = array[i];
-					array[i] = array[j];
-					array[j] = temp;
-					print_array(array, size);
+					swap(array, i, j, size);
 					signal = 0;
 					partition_high = j;
 					break;
@@ -53,9 +50,7 @@ int partition_array(int *array, int l, int h, size_t size)
 
 			if (signal)
 			{
-				array[pivot_index] = array[i];
-				array[i] = pivot;
-				print_array(array, size);
+				swap(array, i, pivot_index, size);
 				return (i);
 			}
 		}
@@ -63,14 +58,20 @@ int partition_array(int *array, int l, int h, size_t size)
 		if (i == partition_high)
 		{
 			if (array[i] > pivot)
-			{
-				array[pivot_index] = array[i];
-				array[i] = pivot;
-				print_array(array, size);
-			}
+				swap(array, i, pivot_index, size);
 			return i;
 		}
 	}
 
 	return (-1);
+}
+
+void swap(int *array, int i, int j, size_t size)
+{
+	int temp;
+
+	temp = array[i];
+	array[i] = array[j];
+	array[j] = temp;
+	print_array(array, size);
 }
